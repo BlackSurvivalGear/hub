@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#050505">
+<meta name="description" content="Africa One — The African Digital Project Network">
+<title>AFRICA ONE — African Digital Project Network</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Orbitron:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#d7a83d;--gold2:#ffdc72;--ink:#050505;--panel:#0d0d0e;--line:rgba(255,220,114,.16);--muted:#a7a7a7;--white:#f7f4ed}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:var(--white);font-family:Inter,system-ui,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 50% 0%,rgba(215,168,61,.12),transparent 34%),radial-gradient(circle at 10% 55%,rgba(215,168,61,.045),transparent 28%),radial-gradient(circle at 90% 70%,rgba(255,255,255,.025),transparent 25%);z-index:-2}
+body:after{content:"";position:fixed;inset:0;pointer-events:none;opacity:.18;z-index:-1;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:64px 64px;mask-image:linear-gradient(to bottom,black,transparent 75%)}
+a{color:inherit;text-decoration:none}.wrap{width:min(1180px,calc(100% - 40px));margin:auto}
+.nav{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.07);position:relative;z-index:5}.brand{display:flex;align-items:center;gap:12px;font-family:Orbitron,sans-serif;letter-spacing:3px;font-size:14px}.brand-mark{width:36px;height:36px;border:1px solid var(--gold);border-radius:10px;display:grid;place-items:center;color:var(--gold2);font-weight:900;box-shadow:0 0 24px rgba(215,168,61,.12)}.nav-right{font-size:11px;color:#888;letter-spacing:2px}
+.hero{text-align:center;padding:72px 0 48px}.hero-logo{width:min(560px,82vw);height:auto;display:block;margin:0 auto 30px;filter:drop-shadow(0 22px 42px rgba(215,168,61,.2));animation:float 6s ease-in-out infinite}.hero h1{font-family:Orbitron,sans-serif;font-size:clamp(34px,6vw,72px);letter-spacing:7px;margin:0;background:linear-gradient(180deg,#fff7d8 0%,#d7a83d 55%,#8c6420 100%);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 12px 50px rgba(215,168,61,.12)}.hero .tag{font-family:Orbitron,sans-serif;font-size:11px;letter-spacing:4px;color:#c7c1b1;margin:18px 0 0}.hero p{max-width:650px;margin:22px auto 0;color:#8e8e8e;line-height:1.8;font-size:15px}
+.rule{display:flex;align-items:center;gap:18px;margin:10px 0 42px;color:#80672f;font-size:9px;letter-spacing:4px}.rule:before,.rule:after{content:"";height:1px;flex:1;background:linear-gradient(90deg,transparent,var(--line))}.rule:after{background:linear-gradient(90deg,var(--line),transparent)}
+.projects{padding:18px 0 100px}.section-head{display:flex;align-items:end;justify-content:space-between;margin-bottom:24px}.eyebrow{font-family:Orbitron,sans-serif;color:var(--gold);font-size:10px;letter-spacing:3px}.section-head h2{font-family:Orbitron,sans-serif;font-size:25px;margin:8px 0 0;letter-spacing:2px}.count{color:#666;font-size:11px;letter-spacing:2px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{--mx:50%;--my:50%;position:relative;min-height:250px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.012) 45%,rgba(215,168,61,.018));overflow:hidden;transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease;transform-style:preserve-3d}.card:before{content:"";position:absolute;inset:-1px;background:radial-gradient(circle at var(--mx) var(--my),rgba(255,220,114,.17),transparent 30%);opacity:0;transition:opacity .35s;pointer-events:none}.card:hover{transform:translateY(-8px);border-color:rgba(255,220,114,.48);box-shadow:0 24px 60px rgba(0,0,0,.55),0 0 30px rgba(215,168,61,.08)}.card:hover:before{opacity:1}.card-inner{height:100%;min-height:250px;padding:22px;display:flex;flex-direction:column;position:relative;z-index:1}.logo-box{height:100px;display:grid;place-items:center;margin-bottom:14px}.logo{max-width:125px;max-height:88px;width:auto;height:auto;object-fit:contain;filter:drop-shadow(0 8px 14px rgba(0,0,0,.4))}.sade-logo{font-family:Orbitron,sans-serif;font-size:29px;font-weight:900;letter-spacing:5px;color:#e9fff3;text-shadow:0 0 20px rgba(57,217,138,.35)}.sade-logo span{color:#39d98a}.card h3{margin:0;font-size:16px;letter-spacing:1px}.card p{margin:8px 0 0;color:#888;font-size:12px;line-height:1.6;flex:1}.launch{display:inline-flex;align-items:center;justify-content:space-between;margin-top:18px;border-top:1px solid rgba(255,255,255,.08);padding-top:13px;color:#c7c0ad;font-size:10px;font-weight:700;letter-spacing:2px}.arrow{color:var(--gold2);font-size:16px;transition:transform .25s}.card:hover .arrow{transform:translateX(5px)}
+.footer{border-top:1px solid rgba(255,255,255,.07);padding:35px 0 45px}.footer-row{display:flex;justify-content:space-between;align-items:center;gap:20px}.footer strong{font-family:Orbitron,sans-serif;font-size:11px;letter-spacing:2px}.footer span{font-size:10px;color:#666;letter-spacing:2px}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.hero{padding-top:48px}.hero-logo{width:min(470px,90vw)}}@media(max-width:560px){.wrap{width:min(100% - 26px,1180px)}.nav{height:68px}.nav-right{display:none}.hero h1{letter-spacing:4px}.hero .tag{letter-spacing:2px;line-height:1.7}.grid{grid-template-columns:1fr}.card,.card-inner{min-height:225px}.logo-box{height:88px}.footer-row{align-items:flex-start;flex-direction:column}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="nav wrap"><a class="brand" href="./"><span class="brand-mark">A1</span><span>AFRICA ONE</span></a><div class="nav-right">THE AFRICAN DIGITAL PROJECT NETWORK</div></header>
+<main>
+<section class="hero wrap">
+<img class="hero-logo" src="file_000000003d2081f9975bf08b534d0767.png" alt="Africa One 3D logo">
+<h1>AFRICA ONE</h1>
+<div class="tag">THE AFRICAN DIGITAL PROJECT NETWORK</div>
+<p>A single gateway to a growing collection of African intelligence, technology, culture, mapping and survival platforms.</p>
+</section>
+<div class="wrap rule">PROJECTS &nbsp;•&nbsp; INTELLIGENCE &nbsp;•&nbsp; TECHNOLOGY &nbsp;•&nbsp; CULTURE</div>
+<section class="projects wrap" id="projects">
+<div class="section-head"><div><div class="eyebrow">THE NETWORK</div><h2>Explore the Projects</h2></div><div class="count">08 PLATFORMS</div></div>
+<div class="grid">
+<a class="card" href="https://blacksurvivalgear.github.io/AfrOsint/" target="_blank" rel="noopener"><div class="card-inner"><div class="logo-box"><img class="logo" src="https://raw.githubusercontent.com/BlackSurvivalGear/AfrOsint/main/assets/images/AFROSINT%20LOGO.png" alt="AfroSINT"></div><h3>AfroSINT</h3><p>Pan-African open-source intelligence and situational awareness.</p><div class="launch">OPEN PLATFORM <span class="arrow">→</span></div></div></a>
+<a class="card" href="https://blacksurvivalgear.github.io/ART/" target="_blank" rel="noopener"><div class="card-inner"><div class="logo-box"><img class="logo" src="https://raw.githubusercontent.com/BlackSurvivalGear/ART/main/logo.png" alt="ART"></div><h3>ART</h3><p>A dedicated African research and intelligence platform.</p><div class="launch">OPEN PLATFORM <span class="arrow">→</span></div></div></a>
+<a class="card" href="https://blacksurvivalgear.github.io/AfricanEye/" target="_blank" rel="noopener"><div class="card-inner"><div class="logo-box"><img class="logo" src="https://raw.githubusercontent.com/BlackSurvivalGear/AfricanEye/main/aelogo1.png" alt="AfricanEyE"></div><h3>AfricanEyE</h3><p>An African-focused visual and information platform.</p><div class="launch">OPEN PLATFORM <span class="arrow">→</span></div></div></a>
+<a class="card" href="https://blacksurvivalgear.github.io/blackstack/" target="_blank" rel="noopener"><div class="card-inner"><div class="logo-box"><img class="logo" src="https://raw.githubusercontent.com/BlackSurvivalGear/blackstack/main/public/favicon.svg" alt="BlackStack"></div><h3>BlackStack</h3><p>A technology stack and platform for Black digital builders.</p><div class="launch">OPEN PLATFORM <span class="arrow">→</span></div></div></a>
+<a class="card" href="https://blacksurvivalgear.github.io/sade/" target="_blank" rel="noopener"><div class="card-inner"><div class="logo-box"><div class="sade-logo">S<span>A</span>DE</div></div><h3>SADE AI</h3><p>Software engineering agent for repository-aware development workflows.</p><div class="launch">OPEN PLATFORM <span class="arrow">→</span></div></div></a>
+<a class="card" href="https://blacksurvivalgear.github.io/oriki/" target="_blank" rel="noopener"><div class="card-inner"><div class="logo-box"><img class="logo" src="https://raw.githubusercontent.com/BlackSurvivalGear/oriki/main/OrikiAI.png" alt="ORÍKÌ AI"></div><h3>ORÍKÌ AI</h3><p>AI discovery, intelligence and orchestration for the next generation.</p><div class="launch">OPEN PLATFORM <span class="arrow">→</span></div></div></a>
+<a class="card" href="https://blacksurvivalgear.github.io/BSG/" target="_blank" rel="noopener"><div class="card-inner"><div class="logo-box"><img class="logo" src="https://raw.githubusercontent.com/BlackSurvivalGear/BSG/main/BSG%20GOLD%20LOGO.png" alt="BSG"></div><h3>BSG</h3><p>Black Survival Gear — preparedness, resilience and practical capability.</p><div class="launch">OPEN PLATFORM <span class="arrow">→</span></div></div></a>
+<a class="card" href="https://melaninmaps.africa/" target="_blank" rel="noopener"><div class="card-inner"><div class="logo-box"><img class="logo" src="https://raw.githubusercontent.com/BlackSurvivalGear/MelaninMaps/main/favicon.png" alt="MelaninMaps"></div><h3>MelaninMaps</h3><p>A mapping and discovery platform connecting people, places and opportunity.</p><div class="launch">OPEN PLATFORM <span class="arrow">→</span></div></div></a>
+</div>
+</section>
+</main>
+<footer class="footer"><div class="wrap footer-row"><strong>AFRICA ONE</strong><span>PROJECTS • INTELLIGENCE • TECHNOLOGY • CULTURE</span></div></footer>
+<script>
+document.querySelectorAll('.card').forEach(card=>{card.addEventListener('pointermove',e=>{const r=card.getBoundingClientRect();card.style.setProperty('--mx',`${e.clientX-r.left}px`);card.style.setProperty('--my',`${e.clientY-r.top}px`)})})
+</script>
+</body>
+</html>
